@@ -529,7 +529,6 @@ body {
 
   width: 288px; /*new code*/
   height: 72px; /*new code*/
-  margin-bottom: 72px; /*new code*/
 }
 
 .container-footer {
@@ -558,6 +557,8 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  margin-top: 72px;
+  text-align: center;
 }
 
 .foter-social-ul {
@@ -596,12 +597,16 @@ body {
 .subs-footer {
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
-  justify-content: space-between;
-  /*width: 453px;*/
-  /*height: 80px;*/
-  margin-left: 80px;
-  /*padding-top: 92px;*/
+
+  align-items: center;
+
+  /*justify-content: space-between;*/
+  /*width: 453px;PK
+  height: 80px;PK
+  /*margin-left: 80px;PK*/
+  /*padding-top: 92px;PK*/
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .text-sub {
   background-color: #2e2f42;
@@ -611,7 +616,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  text-align: left;
+  /*text-align: left; PK*/
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -640,9 +646,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  /*gap: 16px;*/
+  gap: 16px;
+
   border-radius: 4px;
-  padding: 8px 24px;
+  /*padding: 8px 24px;*/
+  width: 165px;
+  height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -678,7 +687,8 @@ p {
 }
 
 .container {
-  width: 320px;
+  max-width: 320px;
+
   /* max-width: 1158px;для пк*/
   padding-left: 15px;
   padding-right: 15px;
@@ -975,10 +985,11 @@ img {
 }
 .subscribe-subscribe {
   display: flex;
-  flex-direction: row;
-  /*--margin-top: 100px;-*/
-  /*--margin-top: 100px;-*/
-  align-items: baseline;
+  flex-direction: column;
+  /*flex-direction: row;
+  margin-top: 100px;
+  margin-top: 100px;
+  align-items: baseline;*/
   gap: 24px;
 }
 .footer-field {
