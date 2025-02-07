@@ -278,7 +278,7 @@ body {
   padding-top: 96px;
   padding-bottom: 96px;
   box-sizing: border-box;
-  border: 1px solid rgb(0, 0, 0);
+  /*border: 1px solid rgb(0, 0, 0); PK*/
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgb(244, 244, 253);
 }
@@ -425,7 +425,7 @@ body {
   gap: 24px; /*new code*/
   align-items: center; /*new code*/
   width: 288px; /*new code*/
-  height: 120px; /*new code*/
+  height: 280px; /*new code*/
   /*
   display: flex;
   flex-wrap: wrap;
@@ -434,6 +434,7 @@ body {
 }
 
 .portfolio-list {
+  width: calc((100% - 48px) / 1);
   /*width: calc((100% - 48px) / 3);*/
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
