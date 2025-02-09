@@ -109,16 +109,19 @@ body {
 
 /*--------------------------------------------header mobile-------------------------------*/
 .newbr {
-  display: none;
+  border-style: inherit;
 }
 .mobile-menu {
-  width: 100%;
-  height: 100%;
+  width: 288px;
+  height: 623px;
   position: fixed;
   background-color: #fff;
   top: 0;
   z-index: 1;
   padding: 24px 24px 40px 16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .new-button {
   width: 24px;
@@ -127,7 +130,7 @@ body {
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  background: #fff;
+  background: rgb(231, 233, 252);
   border-radius: 50%;
   display: block;
   align-items: center;
@@ -159,38 +162,62 @@ body {
 .mob-menyu-item:first-child .menu-window {
   color: rgb(64, 75, 191);
 }
+
+.windows-adress {
+}
 .address-window {
   width: 193px;
   height: 72px;
   margin-top: 166px;
-  padding-left: 16px;
+}
+
+.mailto-window-list {
+  margin-bottom: 24px;
 }
 .mailto-window {
-  margin-bottom: 24px;
+  letter-spacing: 1.1;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: rgb(67, 68, 85);
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailto-window-list:first-child .mailto-window {
+  color: rgb(64, 75, 191);
+}
+
+.header-mobile-icons {
 }
 .header-menu-icons {
   display: flex;
   gap: 16px;
   flex-direction: row;
+  justify-content: space-between;
   width: 280px;
+  margin-top: 48px;
 }
 .header-social-item {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-social-link {
+  width: 40px;
+  height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-social-link {
-  width: 40px;
-  height: 40px;
 }
 .social-svg-social {
+  align-content: center;
 }
 /*--------------------------------------------SECTION-ONE-------------------------------*/
 
@@ -206,8 +233,7 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.07;
   text-align: center;
-
-  margin: 0 0 0 0;
+  margin-top: 72px;
 }
 .section-one {
   background-image: linear-gradient(
@@ -1150,7 +1176,9 @@ img {
 
 }
 
-
+.title{
+  /*margin: 0 0 0 0;
+}
 
   .flex-class-section-two {
     align-items: center;
