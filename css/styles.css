@@ -106,6 +106,29 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+/*--------------------------------------------header mobile-------------------------------*/
+
+.mobile-menu {
+}
+.new-button {
+}
+.list-menu-window {
+}
+.menu-window {
+}
+.address-window {
+}
+.mailto-window {
+}
+.header-menu-icons {
+}
+.header-social-item {
+}
+.header-social-link {
+}
+.social-svg-social {
+}
 /*--------------------------------------------SECTION-ONE-------------------------------*/
 
 .title {
@@ -144,8 +167,6 @@ body {
   
 }*/
 
-.newbr {
-}
 .button {
   color: #ffffff;
   background-color: #4d5ae5;
@@ -181,6 +202,8 @@ body {
   align-items: center;
 }
 
+.mobile-menu {
+}
 /*------------------------------------SECTION-TWO-------------------------------------*/
 .section-two {
   background-color: #ffffff;
