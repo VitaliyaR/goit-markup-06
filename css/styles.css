@@ -110,6 +110,7 @@ body {
 /*--------------------------------------------header mobile-------------------------------*/
 .newbr {
   border-style: inherit;
+  background-color: #fff;
 }
 .mobile-menu {
   width: 288px;
