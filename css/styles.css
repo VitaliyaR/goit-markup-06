@@ -36,25 +36,6 @@ body {
   color: #2e2f42;
   display: inline-block;
 }
-/*
-.list-menu-nav {
-  gap: 40px;
-  margin-right: 40px 0;
-  /*--margin-top: 24px;--*/
-/*--margin-bottom: 24px;--*/
-/*display: block; /*--test--*/
-/*padding: 24px 0 24px;
-}*/
-/*
-.menu-nav {
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding: 24px 0 24px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*1*/
-/*}*/
 
 .top-line-bg {
   color: rgb(64, 75, 191);
@@ -321,8 +302,8 @@ body {
 }
 
 .advantages-list {
-  /*width: calc((100% - 70px) / 4);*/
-  /*width: 100%;
+  /* width: calc((100% - 70px) / 2);
+  width: 100%;
   margin-bottom: 8px;
   display: flex;
   flex-direction: column;
@@ -455,23 +436,14 @@ body {
 
 .section-three-link {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-
-  /*--
-  width: 40px;
-  height: 40px;
   flex-direction: row;
-  justify-content: space-between;
-
-  list-style: none;
-  padding: 0;
-  margin: 15px;--*/
+  justify-content: center;
   margin-top: 8px;
+  margin-left: 16px;
 }
 
 .section-three-item {
-  /*--margin-right: 20px;--*/
+  margin-right: 20px; /*--*/
   width: 40px;
   height: 40px;
 }
@@ -548,7 +520,7 @@ body {
 }
 
 .portfolio-list {
-  /*width: 100%;*/
+  width: 100%;
   /*width: calc((100% - 48px) / 1);*/
   /*width: calc((100% - 48px) / 3);*/
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1176,7 +1148,23 @@ img {
     padding: 25.5px 0px 25.5px 0px;
     display: flex;
   }
+  .list-menu-nav {
+    gap: 40px;
+    margin-right: 40px 0;
+    /*--margin-top: 24px;--*/
+    /*--margin-bottom: 24px;--*/
+    /*display: block; /*--test--*/
+    padding: 24px 0 24px;
+  }
+
   .menu-nav {
+    color: #2e2f42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*1*/
   }
 
   .address {
@@ -1217,8 +1205,66 @@ img {
     justify-content: space-between;
     align-items: center;
   }
-}
 
+  .section-two {
+    padding-top: 96px;
+
+    padding-bottom: 96px;
+  }
+
+  .list-advantages {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .advantages-list {
+    width: calc((100% - 70px) / 2);
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8;
+  }
+
+  .section-three-ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: center;
+    /*align-items: center;*/
+  }
+  .section-three-li {
+    /*width: calc((100% - 72px) / 2);*/
+    width: calc((100% - 210px) / 2);
+  }
+  .team-name-position {
+    padding-top: 0px;
+    padding-bottom: 32px;
+  }
+  .name-team {
+    margin-top: 32px;
+  }
+
+  .section-four {
+    padding: 96px 0 96px 0;
+  }
+
+  .portfolio-list-ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-list {
+    width: 356px;
+  }
+
+  .logo-text {
+    width: 264px;
+  }
+}
 /*------------------------------PK --------------------------------*/
 /*
 
