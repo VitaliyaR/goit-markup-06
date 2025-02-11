@@ -85,8 +85,6 @@ body {
 .newbr {
   border-style: inherit;
   background-color: #fff;
-  opacity: 0;
-  visibility: hidden;
   pointer-events: none;
 }
 .mobile-menu {
@@ -218,7 +216,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background_mob.jpeg);
+    url(../images/banking_mob.jpeg);
   padding-top: 16px;
   max-width: 320px;
   height: 435px;
@@ -1208,24 +1206,36 @@ img {
 
   .section-two {
     padding-top: 96px;
-
-    padding-bottom: 96px;
+    padding-bottom: 91px;
   }
 
   .list-advantages {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
+    align-items: center;
   }
   .advantages-list {
-    width: calc((100% - 70px) / 2);
-    width: 100%;
-    margin-bottom: 8px;
+    width: calc((100% - 25px) / 2);
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 8;
+  }
+
+  .list-name {
+    text-align: left;
+
+    font-weight: 700;
+  }
+
+  .list {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.01em;
   }
 
   .section-three-ul {
@@ -1249,20 +1259,72 @@ img {
   }
 
   .section-four {
-    padding: 96px 0 96px 0;
+    padding: 103px 0 94px 0;
   }
 
   .portfolio-list-ul {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    align-items: center;
+    width: 100%;
+    /*width: calc((100% - 500px) / 1);*/
   }
 
   .portfolio-list {
-    width: 356px;
+    /*width: calc((100% - 50px) / 1);*/
+    width: 356px; /*new code*/
+  }
+
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .logo-text {
     width: 264px;
+    margin-bottom: 72px;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 24px;
+  }
+
+  .footer-media-text {
+    margin-bottom: 16px;
+    margin-top: 0px;
+  }
+
+  .subs-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+
+    padding-left: 0px;
+    padding-right: 45px;
+  }
+  .subscribe-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .web-footer {
+    margin-left: 0px;
+  }
+  .footer-media-text {
+    text-align: left;
   }
 }
 /*------------------------------PK --------------------------------*/
