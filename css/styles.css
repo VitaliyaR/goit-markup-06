@@ -810,14 +810,19 @@ padding-left: 0px;
 }
 /*mobile*/
 .modal {
-  /*width: 288px;
-  min-height: 623px;*/
+  /*width: 288px;*/
+  /*min-height: 623px;*/
   top: 50%;
   left: 50%;
   background-color: rgb(252, 252, 252);
   position: absolute;
   transform: translate(-50%, -50%);
-  padding: 24px 16px 24px 16px;
+  /*padding: 24px 16px 24px 16px;*/
+  padding-top: 24px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -837,7 +842,7 @@ padding-left: 0px;
 
   /*right: 24px;
   top: 24px;*/
-  margin-bottom: 24px;
+  /*margin-bottom: 24px;*/
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -903,10 +908,10 @@ padding-left: 0px;
 /*mobile*/
 .modal-button-two {
   display: block;
-  margin: 0 auto 24px;
+  margin: 0 auto /*24px*/;
   min-width: 169px;
   height: 56px;
-  position: relative;
+  /* position: relative;*/
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
@@ -1314,9 +1319,10 @@ padding-left: 0px;
   .modal {
     width: 408px;
     min-height: 584px;
-    top: 37%;
+    top: 50%;
     padding: 24px 24px 24px 24px;
     left: 50%;
+
     background-color: rgb(252, 252, 252);
   }
   /*--tablet--*/
@@ -1325,10 +1331,6 @@ padding-left: 0px;
     height: 24px;
   }
   /*--tablet--*/
-  .modal-button-two {
-    /*margin-right: 100px;*/
-    margin-bottom: 24px;
-  }
 }
 /*------------------------------PK --------------------------------*/
 @media screen and (min-width: 1158px) {
@@ -1871,7 +1873,7 @@ padding-left: 0px;
     left: 50%;
     top: 50%;
     background-color: rgb(252, 252, 252);
-    position: absolute;
+    /*position: absolute;*/
     transform: translate(-50%, -50%);
     padding-top: 24px;
     padding-bottom: 24px;
