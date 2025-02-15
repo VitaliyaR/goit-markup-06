@@ -103,9 +103,95 @@
 }
 /* ---------------------------------MOBILE MENU-----------------------------*/
 /*--mobile--*/
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-menu {
-  width: 320px;
-  height: 640px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+/*.container {
+  padding-right: 0px;
+padding-left: 0px;  
+  
+}*/
+.mobail-menu-container {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  padding-right: 24px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.new-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background: rgb(231, 233, 252);
+  border-radius: 50%;
+  /*display: block;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-menu-window {
+  /*margin-top: 26px;*/
+  margin-bottom: auto;
+}
+
+.mob-menyu-item {
+  margin-bottom: 40px;
+}
+.menu-window {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: black;
+}
+.mob-menyu-item:first-child .menu-window {
+  color: rgb(64, 75, 191);
+}
+
+/*
+  width: 100%;
+  height: 100%;
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -115,54 +201,19 @@
   padding-right: 24px;
   padding-left: 16px;
   padding-bottom: 40px;
-}
+}*/
 /*--mobile--*/
-.new-button {
-  width: 24px;
-  height: 24px;
-
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  background: rgb(231, 233, 252);
-  border-radius: 50%;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  padding: 0;
-  /*cursor: pointer;*/
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-/*--mobile--*/
-.list-menu-window {
-  width: 151px;
-  height: 200px;
-  margin-top: 26px;
-}
-.menu-window {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: black;
-}
-/*--mobile--*/
-.mob-menyu-item {
-  margin-bottom: 40px;
-}
-.mob-menyu-item:first-child .menu-window {
-  color: rgb(64, 75, 191);
-}
 
 /*--mobile--*/
 .address-window {
-  margin-top: 126px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 /*--mobile--*/
-.mailto-window-list {
-  margin-bottom: 24px;
+
+.windows-adress {
+  margin-top: 126px;
 }
 /*--mobile--*/
 .mailto-window {
@@ -174,6 +225,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
 
 /*--mobile--*/
@@ -181,8 +233,7 @@
   color: rgb(64, 75, 191);
 }
 /*--mobile--*/
-.header-mobile-icons {
-}
+
 /*--mobile--*/
 .header-menu-icons {
   display: flex;
@@ -211,6 +262,8 @@
 .social-svg-social {
   align-content: center;
 }
+
+/*------------------------------------------------------------конец моб меню----------------------------*/
 /*--------------------------------------------SECTION-ONE-------------------------------*/
 /*mobile*/
 .title {
@@ -225,11 +278,13 @@
   letter-spacing: 0.02em;
   line-height: 1.07;
   text-align: center;
-  margin-top: 72px;
-  margin-bottom: 0px;
+  /*margin-top: 72px;*/
+  margin-bottom: 0;
 }
 /*mobile*/
 .section-one {
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -267,11 +322,13 @@
   border-radius: 4px;
   gap: 10;
   /*margin: 46px auto 0px auto;*/
-  margin-bottom: 72px;
+
+  /*margin-bottom: 72px;*/
   margin-top: 72px;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*mobile*/
 .button:hover {
   background-color: #404bbf;
@@ -292,8 +349,10 @@
 .section-two {
   background-color: #ffffff;
   padding-top: 96px;
-  padding-bottom: 24px;
+
+  padding-bottom: 91px; /**/
   /* margin-left: 99px;*/
+  margin-top: 0;
 }
 /*mobile*/
 
@@ -310,6 +369,12 @@
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
   display: none;
+}
+/* лист адвенча новий селектор і код в середині дадаж відступи між блоками флексу*/
+.list-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 /*mobile*/
 .list-name {
@@ -333,7 +398,8 @@
   order: 1;
   flex-grow: 0;
   text-align: left;
-  margin-bottom: 72px;
+  /*margin-bottom: 72px;*/ /*15.02 додає відступ між блоами,але не вірно*/
+  margin-bottom: 0; /*новий код возможно онуляет с планшета*/
 }
 
 /*----------------------------SECTION-THREE----------------------------*/
@@ -375,8 +441,8 @@
 }
 /*mobile*/
 .team-name-position {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 /*mobile*/
 .name-team {
@@ -401,13 +467,13 @@
 .section-three-link {
   display: flex;
   flex-direction: row;
+  gap: 24px;
   justify-content: center;
+
   margin-top: 8px;
-  margin-left: 16px;
 }
 /*mobile*/
 .section-three-item {
-  margin-right: 20px;
   width: 40px;
   height: 40px;
 }
@@ -465,7 +531,8 @@
 .portfolio-list-ul {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+
+  gap: 48px;
   align-items: center;
   width: 288px;
 }
@@ -548,7 +615,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
+
   display: inline-block;
+
   text-align: center;
 }
 /*mobile*/
@@ -593,6 +662,7 @@
 .foter-social-ul {
   display: flex;
   gap: 16px;
+  margin-bottom: 72px;
 }
 /*mobile*/
 .social-media-item {
@@ -641,7 +711,7 @@
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
-  margin-top: 72px;
+  /*margin-top: 72px;*/
   margin-bottom: 16px;
 }
 /*mobile*/
@@ -970,8 +1040,6 @@
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.moti {
-}
 
 /*mobile*/
 .modal-cheeck:checked + .modal-cheeck-text > .modal-cheeck-item {
@@ -1097,11 +1165,13 @@
     display: none;
   }
   /*--tablet--*/
+
   .list-advantages {
     display: flex;
+    flex-direction: unset; /*15.02 блокує значення  colum що тягнеться з моб */
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 0px;
+    row-gap: 72px; /*15.02 додаж блокам відступ між собою */
   }
   /*--tablet--*/
   .advantages-list {
@@ -1123,6 +1193,7 @@
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
+    /*margin-bottom: 72px; /*15.02додає відступ між єлементами */
   }
   /*----------------------secteion 3-----------------*/
   /*--tablet--*/
@@ -1132,7 +1203,7 @@
     flex-direction: row;
     justify-content: center;
     column-gap: 24px;
-    row-gap: 96px;
+    row-gap: 64px; /**/
   }
   /*--tablet--*/
   .section-three-li {
@@ -1142,6 +1213,7 @@
   .team-name-position {
     padding-top: 0px;
     padding-bottom: 32px;
+    margin-bottom: 0; /**/
   }
   /*--tablet--*/
   .name-team {
@@ -1196,6 +1268,7 @@
     justify-content: center;
     align-items: flex-start;
     column-gap: 24px;
+    gap: 72px;
   }
   /*--tablet--*/
   .social-media {
@@ -1263,6 +1336,10 @@
   .newbr {
     display: none;
   }
+
+  .web {
+    margin: 0;
+  }
   /*--PK--*/
   .nav-one {
     align-items: space-between;
@@ -1273,7 +1350,14 @@
   /*--PK--*/
   .list-menu-nav {
     gap: 40px;
-    padding: 24px 0 24px;
+    /*padding: 24px 0 24px;*/
+  }
+
+  .mailto {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
   }
   /*--PK--*/
   .address {
@@ -1349,6 +1433,17 @@
       ),
       url(../images/hero_pk-min.jpeg);
   }
+
+  .list-name {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .list {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+  }
+
   .section-two-icon {
     display: block;
     /*width: 264px;*/
@@ -1421,6 +1516,8 @@
   .team-name-position {
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-top: 0;
+    margin-bottom: 0; /*новий код тому що вискочили марджини на пк код 14 числа*/
   }
 
   .name-team {
@@ -1581,9 +1678,6 @@
     margin-bottom: 0px;
   }
 
-  .portfolio-name {
-  }
-
   .portfolio-discripion {
     color: #434455;
     font-size: 16px;
@@ -1594,8 +1688,9 @@
   /*------------------------------FOOTER---------------------------------*/
   .footer {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 104px;
+    height: 312px;
   }
 
   .web-footer {
@@ -1607,6 +1702,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 16px;
+    margin-bottom: 0;
     margin-right: 76px;
     display: inline-block;
   }
@@ -1620,6 +1716,8 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     /*max-width: 264px;*/
+    margin-top: 16px; /*new code 15/02*/
+    margin-bottom: 0;
   }
 
   .container-footer {
@@ -1629,8 +1727,9 @@
     /*--margin-top: 100px;-*/
     /*align-items: baseline;*/
     /*--margin-right: 120px;-*/
-    align-items: baseline;
+    /*align-items: baseline;*/
     justify-content: space-between;
+    gap: 0px; /*онулює однакові відступи по 80*/
   }
   .container-footer-inline-block {
     display: inline-block;
@@ -1638,9 +1737,11 @@
 
   .social-media {
     width: 208px;
+    margin-left: 120px; /* для відступа між скціями сабскрайб та вебстудшщ*/
+    margin-right: 80px;
   }
   .logo-par {
-    /*margin-right: 120px;*/
+    /*margin-right: 120px; */
     display: flex;
     flex-direction: column;
   }
@@ -1725,8 +1826,7 @@
   .input-email::placeholder {
     color: #ffffff;
   }
-  .footer-field {
-  }
+  /*}*/
   .footer-btn {
     display: flex;
     align-items: center;
@@ -1754,6 +1854,42 @@
   }
 
   /*------------------------------MODAL PK---------------------------------*/
+  .backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 24px 24px 24px; /**/
+  }
+  .modal {
+    width: 408px;
+    height: 584px;
+    /*padding-top: 97px;*/
+    left: 50%;
+    top: 50%;
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-form {
+    height: 336px;
+  }
+  .modal-button-two {
+    /*margin-right: 100px;*/
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
 
   /*------------------------------------------------------*/
   .text-sub {
@@ -1811,7 +1947,7 @@
     border-radius: 4px;
   }
   .images-foter {
-    margin-left: 16px;
+    margin-left: 0px; /*new code 15/02*/
   }
 }
 /*****************************************************************/
@@ -1869,8 +2005,8 @@ button {
 
 .container {
   max-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
