@@ -1152,9 +1152,10 @@ padding-left: 0px;
   /*----------------------secteion 1-----------------*/
   /*--tablet--*/
   .section-one {
-    /*max-width: 768px;
-    padding: 0px 0px 0px 0px;
-    height: 436px;*/
+    /*max-width: 768px;*/
+    padding-top: 112px;
+    padding-bottom: 112px;
+    /*height: 436px;*/
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1165,21 +1166,23 @@ padding-left: 0px;
   .title {
     width: 496px;
     height: 120px;
-    margin-top: 112px;
+    /*margin-top: 112px;*/
     font-size: 56px;
   }
   /*----------------------secteion 2-----------------*/
   /*--tablet--*/
   .section-two {
     padding-top: 96px;
-    padding-bottom: 17px;
+    padding-bottom: 96px;
   }
   /*--tablet--*/
   .section-two-icon {
     display: none;
   }
   /*--tablet--*/
-
+  .button {
+    margin: 36px auto 0 auto;
+  }
   .list-advantages {
     display: flex;
     flex-direction: unset; /*15.02 блокує значення  colum що тягнеться з моб */
@@ -1209,6 +1212,7 @@ padding-left: 0px;
     letter-spacing: 0.03em;
     /*margin-bottom: 72px; /*15.02додає відступ між єлементами */
   }
+
   /*----------------------secteion 3-----------------*/
   /*--tablet--*/
   .section-three-ul {
@@ -1223,15 +1227,23 @@ padding-left: 0px;
   .section-three-li {
     width: calc((100% - 210px) / 2);
   }
+  .section-three-link {
+    margin-top: 0;
+  }
+  .position-team {
+    margin-bottom: 8px;
+  }
   /*--tablet--*/
   .team-name-position {
     padding-top: 0px;
     padding-bottom: 32px;
+    padding-top: 32px;
+    margin-top: 0;
     margin-bottom: 0; /**/
   }
   /*--tablet--*/
   .name-team {
-    margin-top: 32px;
+    /*margin-top: 32px;*/
   }
   /*--tablet--*/
   .our-team {
@@ -1262,10 +1274,14 @@ padding-left: 0px;
     padding-top: 96px;
     padding-bottom: 96px;
   }
+
+  .footer .container-footer {
+    padding: 0 108px;
+  }
   /*--tablet--*/
   .logo-text {
     width: 264px;
-    margin-bottom: 72px;
+    /*margin-bottom: 72px;*/
     letter-spacing: 0.01em;
     font-weight: 400;
     font-size: 16px;
@@ -1273,6 +1289,10 @@ padding-left: 0px;
   /*--tablet--*/
   .logo-par {
     margin-right: 0px;
+    /*новій код*/
+    max-width: 264px;
+
+    text-align: start;
   }
   /*--tablet--*/
   .container-footer {
@@ -1282,13 +1302,19 @@ padding-left: 0px;
     /*justify-content: center; /*не правильно*/
     /*align-items: flex-start;*/
 
-    width: 453px;
-
-    gap: 72px;
+    gap: 72px 24px;
   }
   /*--tablet--*/
   .social-media {
     width: calc((100% - 180px) / 2);
+
+    align-self: start;
+  }
+  .foter-social-ul {
+  }
+  .social-media-item {
+    width: 218px;
+    height: 36px;
   }
   /*--tablet--*/
   .footer-media-text {
@@ -1303,7 +1329,7 @@ padding-left: 0px;
     align-items: flex-start;
     padding-left: 0px;
     padding-right: 0px;
-    width: calc((100% - 171px) / 1);
+    width: calc((100% - 97px) / 1); /*171*/
   }
   /*--tablet--*/
   .subscribe-subscribe {
@@ -1324,6 +1350,9 @@ padding-left: 0px;
   /*--tablet--*/
   .footer-btn {
     margin-right: 0px;
+  }
+  .images-foter {
+    margin-left: 0;
   }
   /*--------------------MODAL_TaBLET------------------*/
   /*--tablet--*/
@@ -1458,6 +1487,10 @@ padding-left: 0px;
     letter-spacing: 0.01em;
   }
 
+  .section-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .section-two-icon {
     display: block;
     /*width: 264px;*/
@@ -1705,6 +1738,9 @@ padding-left: 0px;
     padding-top: 96px;
     padding-bottom: 104px;
     height: 312px;
+  }
+  .footer .container-footer {
+    padding: 0 0px;
   }
 
   .web-footer {
