@@ -172,7 +172,7 @@ padding-left: 0px;
 
 .list-menu-window {
   /*margin-top: 26px;*/
-  margin-bottom: auto;
+  /*margin-bottom: auto;*/
 }
 
 .mob-menyu-item {
@@ -219,9 +219,10 @@ padding-left: 0px;
   gap: 24px;
 }
 /*--mobile--*/
-
+.mobile-menu-nav {
+  margin-bottom: auto;
+}
 .windows-adress {
-  margin-top: 126px;
 }
 /*--mobile--*/
 .mailto-window {
